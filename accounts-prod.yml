@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to accounts related production APIs "
+  message: "Welcome to accounts related prod APIs "
   contactDetails:
     name: "Bellatrix - Product Owner"
     email: "{cipher}9172d9bb0cca32fde14a1f457d9af45e53cb001eb518e5793cffeccd57edde14"
