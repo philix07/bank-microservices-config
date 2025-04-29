@@ -1,0 +1,19 @@
+server:
+  port: 8070
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # "fetchRegistry" and "registerWithEureka" are typically set to false
+    # when the application is the Eureka server itself, not a client.
+    # Don't download the list of services from Eureka
+    # (i.e., it's not a Eureka client that wants to discover other services).
+    fetchRegistry: false
+    # Don't register this service with Eureka
+    # (i.e., it's not making itself discoverable).
+    registerWithEureka: false
+    # Specifies the URL where Eureka clients would normally 
+    # connect to register or fetch services.
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
